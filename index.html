@@ -1,74 +1,152 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria Web - Autentica Pizza Italiana</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Pizzeria da Ercolino</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff8f0; 
+    }
+
+    header {
+      background-image: url("img/forno.jpg"); 
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #ff0000; 
+    }
+
+    .menu {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .pizza {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .pizza img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .pizza-info {
+      padding: 15px;
+      flex: 1;
+    }
+
+    .pizza-info h2 {
+      margin: 0 0 5px;
+      color: #b22222; 
+    }
+
+    .pizza-info p {
+      margin: 3px 0;
+      color: #333;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-top: 8px;
+      color: #0d0d0d; 
+    }
+  </style>
 </head>
 <body>
-      
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">🍕 Pizzeria Web</h1>
-                <nav class="nav">
-                    <a href="index.html" class="nav-link active">Home</a>
-                    <a href="menu.html" class="nav-link">Menu</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <header>
+    <h1>Menu delle Pizze</h1>
+  </header>
 
-      
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">Benvenuti alla Pizzeria Web</h2>
-                <p class="hero-subtitle">Autentica pizza italiana preparata con passione e ingredienti freschi</p>
-                <a href="menu.html" class="btn btn-primary">Scopri il Menu</a>
-            </div>
-        </div>
-    </section>
+  <section class="menu">
 
-    
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🍕</div>
-                    <h3 class="feature-title">Pizza Artigianale</h3>
-                    <p class="feature-description">Impasto fatto in casa con lievitazione naturale di 24 ore</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌿</div>
-                    <h3 class="feature-title">Ingredienti Freschi</h3>
-                    <p class="feature-description">Selezioniamo solo i migliori ingredienti locali e di stagione</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👨‍🍳</div>
-                    <h3 class="feature-title">Maestri Pizzaioli</h3>
-                    <p class="feature-description">Il nostro team ha oltre 20 anni di esperienza</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="pizza">
+      <img src="img/margherita.jpg" alt="Pizza Margherita">
+      <div class="pizza-info">
+        <h2>Margherita</h2>
+        <p>Pomodoro, mozzarella, basilico</p>
+        <p class="price">€5,00</p>
+      </div>
+    </div>
 
-     
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Pronto a ordinare?</h2>
-                <p class="cta-description">Esplora il nostro menu completo e scopri tutte le nostre specialità</p>
-                <a href="menu.html" class="btn btn-secondary">Vai al Menu</a>
-            </div>
-        </div>
-    </section>
- 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">&copy; 2025 Pizzeria Web. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
+    <div class="pizza">
+      <img src="img/diavola.jpg" alt="Pizza Diavola">
+      <div class="pizza-info">
+        <h2>Diavola</h2>
+        <p>Pomodoro, mozzarella, salame piccante</p>
+        <p class="price">€6,00</p>
+      </div>
+    </div>
+
+    <div class="pizza">
+      <img src="img/capricciosa.jpg" alt="Pizza Capricciosa">
+      <div class="pizza-info">
+        <h2>Capricciosa</h2>
+        <p>Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive</p>
+        <p class="price">€6,50</p>
+      </div>
+    </div>
+
+    <div class="pizza">
+      <img src="img/quattrostagioni.jpg" alt="Pizza Quattro Stagioni">
+      <div class="pizza-info">
+        <h2>Quattro Stagioni</h2>
+        <p>Pomodoro, mozzarella, prosciutto, funghi, olive, carciofi</p>
+        <p class="price">€8,00</p>
+      </div>
+    </div>
+
+    <div class="pizza">
+      <img src="img/quattroformaggi.jpg" alt="Pizza Quattro Formaggi">
+      <div class="pizza-info">
+        <h2>Quattro Formaggi</h2>
+        <p>Mozzarella, gorgonzola, fontina, parmigiano</p>
+        <p class="price">€8,00</p>
+      </div>
+    </div>
+
+    <div class="pizza">
+      <img src="img/napoli.jpg" alt="Pizza Napoli">
+      <div class="pizza-info">
+        <h2>Napoli</h2>
+        <p>Pomodoro, mozzarella, acciughe, origano</p>
+        <p class="price">€8,00</p>
+      </div>
+    </div>
+
+    <div class="pizza">
+      <img src="img/vegetariana.jpg" alt="Pizza Vegetariana">
+      <div class="pizza-info">
+        <h2>Vegetariana</h2>
+        <p>Pomodoro, mozzarella, verdure grigliate</p>
+        <p class="price">€8,50</p>
+      </div>
+    </div>
+
+    <div class="pizza">
+      <img src="img/tonnoecipolla.jpg" alt="Pizza Tonno e Cipolla">
+      <div class="pizza-info">
+        <h2>Tonno e Cipolla</h2>
+        <p>Pomodoro, mozzarella, tonno, cipolla rossa di Tropea</p>
+        <p class="price">€8,50</p>
+      </div>
+    </div>
+
+  </section>
 </body>
 </html>
